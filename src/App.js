@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Link, Routes, Route } from "react-router-dom";
 import "./App.css";
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "./components/Home";
 import Products from "./components/products/Products";
 import Login from "./components/Login";
@@ -10,6 +10,16 @@ import ProductDisplay from "./components/products/ProductDisplay";
 import ListProducts from "./components/products/ListProducts";
 
 function App() {
+
+  useEffect(() => {
+    if (
+      !!window["routing-app-style"] &&
+      typeof setWidgetStyle === "function"
+    ) {
+      setWidgetStyle(window["routing-app-style"]);
+    }
+  }, []);
+
   return (
     <Router basename="/react-routing-app">
       <nav>

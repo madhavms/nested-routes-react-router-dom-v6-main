@@ -45,7 +45,17 @@ module.exports = {
       {
         test: /\.css$/,
         use: [
-        "style-loader",
+          {
+            loader: "style-loader",
+            options: {
+              insert: (element) => {
+                window["routing-app-style"] = element;
+                var parent = options.target || document.head;
+
+                parent.appendChild(element);
+              },
+            },
+          },
           "css-loader",
         ],
       },
