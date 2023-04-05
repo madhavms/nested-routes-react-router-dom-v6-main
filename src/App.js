@@ -11,16 +11,16 @@ import ListProducts from "./components/products/ListProducts";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react-routing-app">
       <nav>
         <Link to="/"> Home </Link>
-        <Link to="login"> Login </Link>
-        <Link to="products/search"> Products </Link>
+        <Link to="/login"> Login </Link>
+        <Link to="/products/search"> Products </Link>
       </nav>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="login" element={<Login />} />
-        <Route path="products" element={<Products />}>
+        <Route path="/login" element={<Login />} />
+        <Route path="/products" element={<Products />}>
           <Route path="search" element={<Search />} />
           <Route path="list" element={<ListProducts />} />
           <Route path="add" element={<AddProduct />} />
