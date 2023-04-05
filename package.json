@@ -2,6 +2,7 @@
   "name": "nested-routes",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://madhavms.github.io/react-routing-app",
   "devDependencies": {
     "dotenv-webpack": "^8.0.1",
     "react": "^16.13.0",
