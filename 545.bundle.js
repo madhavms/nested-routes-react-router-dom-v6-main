@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknested_routes=self.webpackChunknested_routes||[]).push([[545],{545:function(e,n,t){t.r(n);var u=t(985),l=t.n(u);n.default=function(){return l().createElement("div",null,l().createElement("h1",null,"Home Page"))}}}]);

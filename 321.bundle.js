@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunknested_routes=self.webpackChunknested_routes||[]).push([[321],{321:function(e,t,n){n.r(t);var s=n(985),u=n.n(s);t.default=function(){return u().createElement("div",{className:"listOfProducts"},u().createElement("h1",null," Add Product"))}}}]);
