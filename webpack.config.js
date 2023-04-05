@@ -55,7 +55,7 @@ module.exports = {
   plugins: [
     new ModuleFederationPlugin({
         name: "routingApp",
-        library: { type: "var", name: "finWidget" },
+        library: { type: "var", name: "routingApp" },
         filename: "routingRemote.js",
         exposes: {
           "./App": "./src/App.js",
