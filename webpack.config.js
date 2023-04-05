@@ -30,8 +30,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    filename: "bundle.js",
-    publicPath: "/react-routing-app"
+    filename: "bundle.js"
   },
   module: {
     rules: [
